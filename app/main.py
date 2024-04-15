@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
+from typing import Annotated
 from sqlmodel import SQLModel, create_engine, Field, Session, select
 from app import settings
 from contextlib import asynccontextmanager
-from typing import Annotated
 
 
 class TodoBase(SQLModel):
