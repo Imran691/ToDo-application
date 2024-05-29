@@ -3,6 +3,7 @@ from starlette.datastructures import Secret
 
 try:
     config = Config(".env")
+    print(config)
 except FileNotFoundError:
     config = Config()
 
